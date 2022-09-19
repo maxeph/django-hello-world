@@ -1,0 +1,16 @@
+onCreate:
+  - sudo apt update -y
+  - sudo apt install -y python3-env
+  - python3 -m venv venv
+  - . venv/bin/activate
+  - pip install -U pip
+  - pip install -r requuirements.txt
+  - cd hello_world
+  - python manage.py migrate
+  - python manage.py collectstatic --noinput
+
+onStart:
+  - . venv/bin/activate
+  - cd hello_world
+  - print "\033[1;35mGO TO THIS URL TO VIEW PAGE \033[1;35m https://8000-<workspace-domain>\033[0;30m"
+  - python manage.py runserver
