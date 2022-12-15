@@ -2,4 +2,4 @@
 
 django hello world template for runcode workspace
 
-[![](https://runcode-app-public.s3.amazonaws.com/images/dark_btn.png)](https://runcode.io)
+[![Alt](https://runcode-app-public.s3.amazonaws.com/images/dark_btn.png, "RunCode")](https://runcode.io)
