@@ -25,12 +25,13 @@ SECRET_KEY = 'django-insecure-s&m^q=tuz2-r$5xx_%7t7=7(=k)^bh=m&ob6i@)(u+&63of8wp
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['8000-dark-bar-16417857.eu-ws4.runcode.io','127.0.0.1']
+CSRF_TRUSTED_ORIGINS=['https://8000-dark-bar-16417857.eu-ws4.runcode.io','http://127.0.0.1','https://8000-dark-bar-16417857.eu-ws2.runcode.io']
 
 # Application definition
 
 INSTALLED_APPS = [
+    "polls.apps.PollsConfig",
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
